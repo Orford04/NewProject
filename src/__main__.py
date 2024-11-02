@@ -1,7 +1,4 @@
-# src/__main__.py
-
-def main():
-    print("Hello, World!")  # Replace this with your main functionality
-
-if __name__ == "__main__":
-    main()
+import sys
+from src.hello.HelloWorld import HelloWorld
+print("In /src/__main__.py")
+HelloWorld.main(sys.argv)

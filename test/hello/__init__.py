@@ -1,0 +1,1 @@
+print("In /test/hello/__init__.py")
