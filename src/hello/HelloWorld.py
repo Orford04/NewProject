@@ -8,13 +8,16 @@ Version: 0.1
 """
 
 
+from typing import List
+
+
 class HelloWorld:
     """Simple HelloWorld Class.
 
     Prints "Hello World" to the terminal when the main function is executed.
     """
     @staticmethod
-    def main(args):
+    def main(args: List[str]) -> None:
         """Prints a hello message.
 
         This method prints the standard "Hello World" message to the terminal.
