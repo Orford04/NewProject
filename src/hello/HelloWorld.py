@@ -9,6 +9,9 @@ Version: 0.1
 
 
 from typing import List
+from src.starfleettreats.data.enums.Container import Container
+from src.starfleettreats.data.enums.Topping import Topping
+from src.starfleettreats.data.sundaes.TheClassic import TheClassic
 
 
 class HelloWorld:
@@ -29,3 +32,14 @@ class HelloWorld:
             print("Hello {}".format(args[1]))
         else:
             print("Hello World")
+
+        classic: TheClassic = TheClassic()
+        print(classic)
+
+        classic.vanilla = False
+        classic.add_topping(Topping.CARAMEL)
+        classic.container = Container.DISH
+
+        print(classic)
+        print(classic.special_instructions)
+        print(classic.toppings)
